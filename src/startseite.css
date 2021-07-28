@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size:50px;
+} 
+
+ #bildLinks{
+    height: 400px;
+    width: 300px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#bildMitte{
+    height: 200px;
+    width: 300px;
+}
+
+#bildRechts{
+    height: 200px
+} 
+
+
+
+p{
+font-size:40px;    
+}
+
+button{
+    height:100px;
+    width:250px;
+    border:grey 5px solid;
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+}
+
+.bilderContainer{
+    display: inline-grid;
+    grid-template-columns: auto auto ;
+    column-gap: 0px;
+    border:grey 5px solid;
+    float:center; 
+}

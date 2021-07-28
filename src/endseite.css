@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+}
+button{
+    height:100px;
+    width:250px;
+    border:grey 5px solid;
+}
+
+#nochmal{
+    float:right;
+    grid-column: 3;
+}
+#return{
+    float:left;
+}
+#schaetz{
+    float:right;
+    grid-column: 3;
+}   
+img{
+    border:grey 5px solid;
+    height:407px;
+    width:725px;
+    
+}
+.buttonContainer {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+
+    column-gap: 10px;
+    row-gap: 10px;
+}

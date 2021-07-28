@@ -1,0 +1,14 @@
+#Schätzung{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+  font-size: 30px;
+
+}
+
+#frage{
+    font-weight: bold;
+    font-size: 40px;
+}

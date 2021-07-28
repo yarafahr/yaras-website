@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <script src="main.js"></script>
+    <link href="endseite.css" type="text/css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Du hast es geschafft</h1>
+    <br />
+    <br />
+    <br />
+
+    <canvas id="leinwand" width="10" height="10"></canvas>
+    <div id="punktestand">Punktestand: 0</div>
+
+
+    <img id="bild">
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script>
+
+            var link = document.getElementById("bild");
+
+            if (localStorage.getItem("Punktestand") >= 18) {
+                link.src = "https://thumbs.dreamstime.com/b/comic-speech-bubble-cartoon-word-wow-vintage-style-comic-speech-bubble-cartoon-word-wow-vintage-style-illustration-design-text-158651844.jpg";
+            } else if (localStorage.getItem("Punktestand") >= 15 && localStorage.getItem("Punktestand") <= 17) {
+                link.src = "https://cdn.pixabay.com/photo/2017/07/04/10/05/board-2470544_960_720.jpg";
+            } else if (localStorage.getItem("Punktestand") >= 11 && localStorage.getItem("Punktestand") <= 14) {
+                link.src = "https://cdn.pixabay.com/photo/2017/06/09/05/21/ok-2385794_960_720.jpg";
+            } else if (localStorage.getItem("Punktestand") >= 6 && localStorage.getItem("Punktestand") <= 10) {
+                link.src = "https://cdn.pixabay.com/photo/2018/05/31/15/06/not-hear-3444212_960_720.jpg";
+            } else if (localStorage.getItem("Punktestand") >= 0 && localStorage.getItem("Punktestand") <= 5) {
+                link.src = "https://cdn.pixabay.com/photo/2016/06/23/18/55/apple-1475977_960_720.png";
+            }
+        
+
+        function Return() {
+            window.location.href = "http://localhost:5500/src/index.html";
+        }
+        function Again() {
+            window.location.href = "http://localhost:5500/src/QuizSeite.html";
+        }
+        function schaetz(){
+            window.location.href = "Schätzfragen.html";
+        }
+    </script>
+
+    <div class="buttonContainer">
+        <button type="button" onclick="Return()" id="return">Zur Startseite</button>
+
+        <button type="button" onclick="Again()" id="nochmal">Zum Quiz</button>
+
+        <button type="button" onclick="schaetz()" id="schaetz">Zum Schätzen</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <link href="startseite.css" type="text/css" rel="stylesheet" />
+    <title>Quizmania</title>
+</head>
+
+<body>
+    <script>
+        function schaetz(){
+            window.location.href = "Schätzfragen.html";
+        }
+        
+        
+        function los() {
+            window.location.href = "http://localhost:5500/src/QuizSeite.html"
+
+        }
+
+    </script>
+
+    <h1>Quizmania</h1>
+
+    <br />
+    <br />
+
+     <div class="bilderContainer">
+
+        <img src="https://cdn.pixabay.com/photo/2019/07/21/16/29/paris-4353082_1280.jpg" id="bildLinks">
+        <img src="https://cdn.pixabay.com/photo/2012/02/07/17/12/acropolis-12044_1280.jpg" id="bildMitte">
+        <img src="https://cdn.pixabay.com/photo/2014/08/14/11/07/brandenburg-gate-417890_1280.jpg" id="bildRechts">
+
+    </div>
+
+    <!-- <img src="/img/indexBild.jpg"> -->
+
+    <p> <strong>Schaffst du es alle Rätsel richtig zu Beantworten?</strong></p>
+
+    <br />
+    <br />
+
+    <button type="button" onclick="los()" id="losButton">
+        Quiz
+    </button>
+
+    <button type="button" onclick="schaetz()" id="schaetzButton">
+        Schätzen
+    </button>
+
+</body>
+
+</html>

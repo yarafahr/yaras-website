@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <link href="design.css" type="text/css" rel="stylesheet" />
+    <title>Quizmania</title>
+    <script src="main.js"></script>
+    <script src="timer.js"></script>
+    <link href="timer.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <script>
+        function weiter() {
+            window.location.href = ("Endseite.html");
+        }
+    </script>
+
+    <h1><strong>Was ist hier zu sehen?</strong></h1>
+
+    <img src="https://cdn.pixabay.com/photo/2016/03/09/09/38/grand-canyon-1245911_1280.jpg">
+
+    <br />
+    <br />
+    <canvas id="leinwand" width="10" height="10"></canvas>
+    <div id="punktestand">Punktestand: 0</div>
+
+    <div class="buttonContainer">
+        <button type="button" onclick="falscherButton()">
+            Big Canyon
+        </button>
+
+        <button type="button" onclick="richtigerButton()">
+            Grand Canyon
+        </button>
+
+        <button type="button" onclick="falscherButton()">
+            Large Canyon
+        </button>
+
+        <div id="timer"></div>
+
+        <button type="button" onclick="weiter()" id="weiterButton">
+            Weiter
+        </button>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    
+</body>
+
+</html>

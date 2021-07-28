@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+}
+
+button{
+    height:100px;
+    width:250px;
+    border:grey 5px solid;
+}
+
+#weiterButton{
+    /* position: relative; 
+    right: 50px; */
+    float:right;
+    height: 70px;
+    width: 100%;
+    grid-column-start: 3;
+}
+
+img{
+    border:grey 5px solid;
+    height:407px;
+    width:725px;
+    
+}
+
+.buttonContainer {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-bottom: 200px;
+}
+
+.buttonContainer button {
+    margin: 0;
+}
+
+#timer{
+    grid-column-start: 2;
+    justify-self: center;
+}
